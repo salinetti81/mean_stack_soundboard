@@ -15,4 +15,16 @@ app.controller('CommentsListController', ['$http', function($http){
 			console.log(err);
 			}
 		)
-}]);
+}]); //ends CommentsListController
+
+	app.controller('CreateCommentController', ['$http', function($http){
+		this.create = function(){
+			console.log(this);
+		}
+	}]);
+
+
+
+
+
+

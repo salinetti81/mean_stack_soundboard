@@ -13,11 +13,24 @@
 
 <body>
 	<h1>Sound Effects</h1>
-	<ul ng-controller="CommentsListController as commentsCtrl"> Comments
+
+<!-- Comments print here -->
+	<h2>Comments</h2>
+	<ul ng-controller="CommentsListController as commentsCtrl"> 
 		<li ng-repeat="comment in commentsCtrl.comments">
 			{{comment.name}} says {{comment.comment}}
 		</li>
-
 	</ul>
+
+
+<!-- Comments form -->
+	<h2>Leave a Comment</h2>
+		<form ng-controller="CreateCommentController as createCtrl" ng-submit="createCtrl.create()">
+			<input ng-model="createCtrl.name" type="text" name="name" placeholder="name" >
+			<br>
+			<textarea ng-model="createCtrl.comment" placehold="comment"></textarea>
+			<br>
+			<button>Add Comment</button>
+		</form>
 </body>
 </html>
