@@ -17,9 +17,26 @@ app.controller('CommentsListController', ['$http', function($http){
 		)
 }]); //ends CommentsListController
 
-	app.controller('CreateCommentController', ['$http', function($http){
+	app.controller('CreateCommentController', ['$scope', '$http', function($scope, $http){
+		var controller = this;
 		this.create = function(){
-			console.log(this);
+			$http({
+				method:'POST',
+				url:'/comments',
+				data: this
+			}).then(
+				//success
+				function(response) {
+					console.log(response);
+					$scope.$$prevSibling.commentsCtrl.comments.push(response.data);
+					controller.name = undefined;
+					controller.comment = undefined;
+				},
+				//fail
+				function(){
+
+				}
+			);
 		}
 	}]);
 

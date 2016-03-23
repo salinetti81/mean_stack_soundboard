@@ -10,6 +10,10 @@ router.get('/', function(req, res){
 	});
 });
 
+// Post the comments to the page
+router.post('/', function(req, res) {
+	res.send(req.body);
+});
 
 module.exports = router;
 
