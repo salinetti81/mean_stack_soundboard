@@ -1,13 +1,13 @@
 var app = angular.module("SoundBoard", []);
 
 app.controller('CommentsListController', ['$http', function($http){
-	this.soundboard = [];
+	this.comments = [];
 	var controller = this;
-	$http.get('/soundboard').then(
+	$http.get('/comments').then(
 		
 		//success
 		function(response){
-			controller.soundboard = response.data;
+			controller.comments = response.data;
 			console.log(response.data);
 		},
 		//error

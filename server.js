@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 	//Serve index.html and app.js
 app.use(express.static('public'));
 
-var soundBoardController = require('./controllers/soundboard.js');
-app.use('/soundboard', soundBoardController); 
+var soundBoardController = require('./controllers/comments.js');
+app.use('/comments', soundBoardController); 
 
 mongoose.connect('mongodb://localhost:27017/soundboard');
 
