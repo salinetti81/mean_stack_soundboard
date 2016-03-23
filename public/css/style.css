@@ -1,0 +1,13 @@
+body {
+	margin-left: 10%;
+
+}
+
+#soundboard {
+	height: 200px;
+	width: 20em;
+	border: 2px dotted black;
+	padding: 5%;
+	text-align: center;
+	background-color: snow;
+}

@@ -8,7 +8,7 @@ app.controller('CommentsListController', ['$http', function($http){
 		//success
 		function(response){
 			controller.comments = response.data;
-			console.log(response.data);
+			// console.log(response.data);
 		},
 		//error
 		function() {

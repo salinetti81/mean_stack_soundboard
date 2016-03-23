@@ -10,9 +10,12 @@ router.get('/', function(req, res){
 	});
 });
 
-// Post the comments to the page
+// Post the comments to the page and save to DB
 router.post('/', function(req, res) {
-	res.send(req.body);
+	var newComment = new Comment(req.body)
+	newComment.save(function(err, data){
+		res.send(data);
+	})
 });
 
 module.exports = router;
