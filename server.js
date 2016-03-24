@@ -17,7 +17,7 @@ app.use(express.static('public'));
 var soundBoardController = require('./controllers/comments.js');
 app.use('/comments', soundBoardController); 
 
-mongoose.connect('mongodb://localhost:27017/soundboard');
+// mongoose.connect('mongodb://localhost:27017/soundboard');
 
 mongoose.connection.once('open', function() {
 	console.log('connected to mongo');
