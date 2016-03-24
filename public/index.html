@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html ng-app= "SoundBoard">
 <head>
-
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Sound Board</title>
+
+<!-- Anguarl script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+
+	<!-- Local JS file -->
 	<script src="js/app.js"></script>
 </head>
 
 <body>
-	<h1>Sound Effects</h1>
-<div id= "soundboard">Soundboard will go here</div>
+<h1>Sound Effects</h1>
+<!-- SOUNDBOARD DIV(S) -->
+<section ng-controller="SoundBoardController as soundCtrl">
+	<span ng-bind="soundCtrl.title"></span>
+
+	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard">Soundboard <br>
+
+		<!-- Sample audio clip -->
+			<button ng-audio="audio/crash_cymbal.mp3" volume="0.5" start="0.2">Click me</button>
+
+	</div>
+	<!-- Reveals Sound Board -->
+	<button type="button" ng-click="soundCtrl.showContent()">Click Me to Show Soundboard</button>
+</section>
+<hr>
+	
+
+<!-- COMMENTS SECTION -->
+
 <!-- Comments print here -->
 	<h2>Comments</h2>
 	<ul ng-controller="CommentsListController as commentsCtrl"> 

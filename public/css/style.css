@@ -4,10 +4,17 @@ body {
 }
 
 #soundboard {
+	display: none;
 	height: 200px;
 	width: 20em;
 	border: 2px dotted black;
 	padding: 5%;
 	text-align: center;
 	background-color: snow;
+}
+
+
+
+#soundboard.active {
+    display:block;
 }
