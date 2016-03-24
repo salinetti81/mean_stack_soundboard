@@ -2,8 +2,11 @@ var express 		= require('express'),
 		app 	  		= express(),
 		mongoose 		= require('mongoose'),
 		bodyParser 	= require('body-parser'),
- 		mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/soundboard',
  		port = process.env.PORT || 3000;
+
+var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/sounds-board';
+mongoose.connect(mongoUri);
+
 
 app.use(bodyParser.json());
 
