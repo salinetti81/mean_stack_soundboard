@@ -114,13 +114,21 @@ button:hover {
 footer a {
 	text-decoration: none;
 	color: black;
-	margin-left: 5%;
+	/*margin-left: 5%;*/
 }
 
 footer a:hover {
 	color: #005FED;
 }
 
+footer li {
+	display: ;
+	padding-bottom: 30px;
+}
+
+footer {
+	height: 100px;
+}
 
 
 
