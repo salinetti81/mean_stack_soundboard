@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html ng-app= "SoundBoard">
+ <meta charset=”utf-8”> 
 <head>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -20,19 +18,158 @@
 <h1>Sound Effects</h1>
 <!-- SOUNDBOARD DIV(S) -->
 <section ng-controller="SoundBoardController as soundCtrl">
-	<span ng-bind="soundCtrl.title"></span>
 
-	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard">Soundboard <br>
+<h2>Drums</h2>
+	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard"> <br>
 
 		<!-- Sample audio clip -->
-			<button ng-audio="audio/crash_cymbal.mp3" volume="0.5" start="0.2">Click me</button>
+	<button onclick="this.firstChild.play()"><audio src="audio/drums/crash_cymbal.mp3"></audio>
+	Crash
+  </button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/drums/hi_hat.mp3"></audio>
+	Hi Hat
+  </button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/drums/flam.mp3"></audio>
+	Flam
+  </button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/drums/solo.mp3"></audio>
+	Solo
+  </button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/drums/snare.mp3"></audio>
+	Bass Drum
+  </button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/drums/snare2.mp3"></audio>
+	Snare 
+  </button>
 
 	</div>
 	<!-- Reveals Sound Board -->
-	<button type="button" ng-click="soundCtrl.showContent()">Click Me to Show Soundboard</button>
-</section>
+	<button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button>
+
+</section> <!-- end drum sounds -->
 <hr>
-	
+
+<section ng-controller="SoundBoardController as soundCtrl">
+
+<h2>Neil Young</h2>
+	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard"> <br>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/neil_young/and_also.mp3"></audio>
+	And Also
+  </button>
+
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/and_uh.mp3"></audio>
+	And Uh
+  </button>
+	<button onclick="this.firstChild.play()"><audio src="audio/neil_young/daddy.mp3"></audio>
+	Start Talking to Daddy Again
+  </button>
+	<button onclick="this.firstChild.play()"><audio src="audio/neil_young/hey.mp3"></audio>
+	Hey
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/hi_mom.mp3"></audio>
+	Hi Mom
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/how_much_i_love_you.mp3"></audio>
+	I Love You
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/i_can_talk.mp3"></audio>
+	I Can Talk
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/long_time.mp3"></audio>
+	Long Time
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/my_friend_jack.mp3"></audio>
+	My Friend Jack
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/my_friend_jack2.mp3"></audio>
+	My Friend Jack 2
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/no_reason.mp3"></audio>
+	No Reason
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/send_you.mp3"></audio>
+	Send You
+  </button>
+  <button onclick="this.firstChild.play()"><audio src="audio/neil_young/talk_to_you.mp3"></audio>
+	Talk to You
+  </button>
+	</div>
+	<!-- Reveals Sound Board -->
+	<button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button>
+
+</section> <!-- end neil youn -->
+<hr>
+
+
+<section ng-controller="SoundBoardController as soundCtrl">
+<h2>The Dark Web</h2>
+	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard"> <br>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/lizard_person.mp3"></audio>
+	Lizard Person
+	</button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/wake_up.mp3"></audio>
+	Wake Up America
+	</button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/look_at_that.mp3"></audio>
+	Look at That
+	</button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/nobody_laughed.mp3"></audio>
+	Nobody Laughed
+	</button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/persistence.mp3"></audio>
+	Persistence
+	</button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/idiot.mp3"></audio>
+	I'm an Idiot
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/what.mp3"></audio>
+	What?
+	</button>
+
+	<button onclick="this.firstChild.play()"><audio src="audio/matt/netflix.mp3"></audio>
+	Netflix and Chill
+	</button>
+
+</div>
+	<!-- Reveals Sound Board -->
+	<button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button>
+
+</section> <!-- end dark web -->
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- COMMENTS SECTION -->
 

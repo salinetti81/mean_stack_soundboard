@@ -5,8 +5,6 @@ var app = angular.module("SoundBoard", []);
 // SoundBoard Section
 app.controller('SoundBoardController', [function($scope,ngAudio){
 	
-	this.title = "Sound Board";
-
 	this.displayContent = false;
 
 //click to reveal content
