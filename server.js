@@ -2,7 +2,7 @@ var express 		= require('express'),
 		app 	  		= express(),
 		mongoose 		= require('mongoose'),
 		bodyParser 	= require('body-parser'),
- 		mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/sounds-board',
+ 		mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/soundboard',
  		port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
