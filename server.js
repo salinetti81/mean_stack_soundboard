@@ -1,7 +1,9 @@
 var express 		= require('express'),
 		app 	  		= express(),
 		mongoose 		= require('mongoose'),
-		bodyParser 	= require('body-parser');
+		bodyParser 	= require('body-parser'),
+ 		mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/sounds-board',
+ 		port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
@@ -16,7 +18,7 @@ mongoose.connect('mongodb://localhost:27017/soundboard');
 
 mongoose.connection.once('open', function() {
 	console.log('connected to mongo');
-	app.listen(3000, function() {
+	app.listen(port, function() {
 		console.log('listen')
 	});
 });
