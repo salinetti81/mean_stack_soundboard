@@ -1,21 +1,141 @@
 
-body {
-	margin-left: 10%;
 
+body {
+	font-family: sans-serif;	
+}
+
+header {
+	text-align: center;
+	font-family: 'Archivo Black', sans-serif;
+	color: #4B4C4D;
+}
+
+body h2 {
+	font-family: 'Archivo Black', sans-serif;
+	color: #4B4C4D;
+}
+
+.sub_title {
+	text-align: center;
+
+}
+
+section {
+	display: ;
+	margin-left: 10%;
+}
+section h2 {
+	margin-left: -12%;
+	text-align: center;
+}
+section h2:hover{
+	cursor: pointer;
+	color: #005FED;
 }
 
 #soundboard {
-	display: none;
-	height: 200px;
+	display: none ;
+	height: 100%;
 	width: 20em;
-	border: 2px dotted black;
 	padding: ;
 	text-align: center;
-	background-color: snow;
+	background-color: ;
+	margin-bottom: 20px;
+	margin-left: 30%
 }
-
-
 
 #soundboard.active {
-    display:block;
+   display: block;
 }
+
+#soundboard button {
+	margin: 1%; 
+}
+
+.soundboard_container {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+li {
+	list-style: none;
+}
+
+.comments_section {
+	margin: 50px;
+}
+
+.comments_section li {
+	background-color: #E1E1E1;
+	margin-bottom: 10px;
+	width: 40em;
+	margin-left: 20%;
+	padding: 10px 20px;
+}
+
+.comments_container  {
+	height: 400px;
+	overflow: scroll;
+}
+
+span {
+	color: #005FED	;
+}
+
+.form_div {
+	margin-left: 30%;
+}
+
+input {
+  display: block;
+  width: 12em;
+  font-size: 15px; 
+}
+
+textarea {
+	width: 20em;
+	height: 200px;
+	font-size: 18px;
+	resize: none
+}
+
+button {
+	border-radius: 0;
+	width: 10em;
+	height: 35px;
+	margin-top: 10px;
+	margin-left: 12em;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+	margin-left: 5%;
+}
+
+footer a:hover {
+	color: #005FED;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

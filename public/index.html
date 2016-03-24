@@ -3,8 +3,8 @@
  <meta charset=”utf-8”> 
 <head>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+	<link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Anguarl script -->
@@ -15,11 +15,17 @@
 </head>
 
 <body>
-<h1>Sound Effects</h1>
+	<header>
+		<h1>Sound Effects</h1>
+	</header> <hr>
+<div class="soundboard_container">
+	<h2 class="sub_title">Choose a Sound Board</h2>
 <!-- SOUNDBOARD DIV(S) -->
 <section ng-controller="SoundBoardController as soundCtrl">
 
-<h2>Drums</h2>
+<h2 ng-click="soundCtrl.showContent()">Drums</h2> 
+	<!-- Reveals Sound Board -->
+
 	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard"> <br>
 
 		<!-- Sample audio clip -->
@@ -48,15 +54,14 @@
   </button>
 
 	</div>
-	<!-- Reveals Sound Board -->
-	<button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button>
+
 
 </section> <!-- end drum sounds -->
-<hr>
+
 
 <section ng-controller="SoundBoardController as soundCtrl">
 
-<h2>Neil Young</h2>
+<h2 ng-click="soundCtrl.showContent()">Neil Young</h2>
 	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard"> <br>
 
 	<button onclick="this.firstChild.play()"><audio src="audio/neil_young/and_also.mp3"></audio>
@@ -67,7 +72,7 @@
 	And Uh
   </button>
 	<button onclick="this.firstChild.play()"><audio src="audio/neil_young/daddy.mp3"></audio>
-	Start Talking to Daddy Again
+	Talk to Daddy 
   </button>
 	<button onclick="this.firstChild.play()"><audio src="audio/neil_young/hey.mp3"></audio>
 	Hey
@@ -101,14 +106,13 @@
   </button>
 	</div>
 	<!-- Reveals Sound Board -->
-	<button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button>
+<!-- 	<button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button> -->
 
-</section> <!-- end neil youn -->
-<hr>
+</section> <!-- end neil young -->
 
 
 <section ng-controller="SoundBoardController as soundCtrl">
-<h2>The Dark Web</h2>
+<h2 ng-click="soundCtrl.showContent()">The Dark Web</h2>
 	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard"> <br>
 
 	<button onclick="this.firstChild.play()"><audio src="audio/matt/lizard_person.mp3"></audio>
@@ -144,9 +148,12 @@
 
 </div>
 	<!-- Reveals Sound Board -->
-	<button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button>
+	<!-- <button type="button" ng-click="soundCtrl.showContent()">Show Soundboard</button> -->
 
 </section> <!-- end dark web -->
+
+</div> <!-- end soundboard container -->
+
 <hr>
 
 
@@ -170,26 +177,49 @@
 
 
 
-
 <!-- COMMENTS SECTION -->
-
+<div class= "comments_section">
 <!-- Comments print here -->
-	<h2>Comments</h2>
-	<ul ng-controller="CommentsListController as commentsCtrl"> 
+	<h2 class="sub_title">Comments</h2>
+
+	<ul class="comments_container" ng-controller="CommentsListController as commentsCtrl"> 
 		<li ng-repeat="comment in commentsCtrl.comments">
-			{{comment.name}} says {{comment.comment}}
+			<span>{{comment.name}}</span> <br> <br> {{comment.comment}}
 		</li>
 	</ul>
 
 
 <!-- Comments form -->
-	<h2>Leave a Comment</h2>
-		<form ng-controller="CreateCommentController as createCtrl" ng-submit="createCtrl.create()">
-			<input ng-model="createCtrl.name" type="text" name="name" placeholder="name" >
-			<br>
-			<textarea ng-model="createCtrl.comment" placehold="comment"></textarea>
-			<br>
-			<button>Add Comment</button>
-		</form>
+	
+		<h2 class="sub_title"> Leave a Comment</h2>
+		<div class="form_div">
+			<form ng-controller="CreateCommentController as createCtrl" ng-submit="createCtrl.create()">
+				<input ng-model="createCtrl.name" type="text" name="name" placeholder="name" >
+				<br>
+				<textarea ng-model="createCtrl.comment" placehold="comment"></textarea>
+				<br>
+				<button>Add Comment</button>
+			</form>
+	</div> <!-- end form div -->
+</div> <!-- end comment section div -->
+
+<footer>
+	<hr>
+<h4><a href="#">Follow me on Twitter</a></h4>
+</footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
