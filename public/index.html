@@ -2,14 +2,10 @@
 <html ng-app= "SoundBoard">
  <meta charset=”utf-8”> 
 <head>
-	<!-- Latest compiled and minified CSS -->
-<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 	<link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
 <!-- Anguarl script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
-
 	<!-- Local JS file -->
 	<script src="js/app.js"></script>
 </head>
@@ -54,13 +50,9 @@
   </button>
 
 	</div>
-
-
 </section> <!-- end drum sounds -->
 
-
 <section ng-controller="SoundBoardController as soundCtrl">
-
 <h2 ng-click="soundCtrl.showContent()">Neil Young</h2>
 	<div ng-class="(soundCtrl.displayContent)?'active': '' " id= "soundboard"> <br>
 
@@ -156,27 +148,6 @@
 
 <hr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- COMMENTS SECTION -->
 <div class= "comments_section">
 <!-- Comments print here -->
@@ -187,7 +158,6 @@
 			<span>{{comment.name}}</span> <br> <br> {{comment.comment}}
 		</li>
 	</ul>
-
 
 <!-- Comments form -->
 	

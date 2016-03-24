@@ -45,7 +45,7 @@ app.controller('CommentsListController', ['$http', function($http){
 			}).then(
 				//success
 				function(response) {
-					console.log(response);
+					// console.log(response);
 					$scope.$$prevSibling.commentsCtrl.comments.push(response.data);
 					controller.name = undefined;
 					controller.comment = undefined;

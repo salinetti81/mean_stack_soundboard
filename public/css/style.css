@@ -75,7 +75,7 @@ li {
 
 .comments_container  {
 	height: 400px;
-	overflow: scroll;
+	overflow: auto;
 }
 
 span {
