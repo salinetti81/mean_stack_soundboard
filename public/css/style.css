@@ -105,6 +105,8 @@ button {
 	height: 35px;
 	margin-top: 10px;
 	margin-left: 12em;
+	border-radius: 3px;
+	background-color: #F2F2F2;
 }
 
 button:hover {
