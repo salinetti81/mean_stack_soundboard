@@ -153,7 +153,345 @@ footer {
 		margin-left: 10%;
 	}
 
-} /*end of media query*/
+} /*end of media query max-width 700px*/
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* iPads (landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* iPads (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1224px) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* Large screens */
+@media only screen and (min-width : 1824px) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/* iPhone 4. Comma can be used to apply same rules to multiple media queries. */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	button {
+		border-radius: 0;
+		width: 25em;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/*iPhone 6 Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+	button {
+		border-radius: 0;
+		width: 40em;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/*iPhone 6 landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+	button {
+		border-radius: 0;
+		width: 40em;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/*iPhone 6+ Portrait*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+		button {
+		border-radius: 0;
+		width: 40em;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+
+}
+
+/*iPhone 6+ landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
+		button {
+		border-radius: 0;
+		width: 40em;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/*iPhone 6 and iPhone 6+ portrait and landscape*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){ 
+		button {
+		border-radius: 0;
+		width: 40em;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/*iPhone 6 and iPhone 6+ portrait*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : portrait){ 
+		button {
+		border-radius: 0;
+		width: 40em;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+}
+
+/*iPhone 6 and iPhone 6+ landscape*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : landscape){ 
+		button {
+		border-radius: 0;
+		width: 40em;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 0em;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+	}
+
+	.form_div {
+		margin-left: 15%;
+	}
+
+	.form_div button {
+		margin-left: 10%;
+	}
+
+}
 
 
 
