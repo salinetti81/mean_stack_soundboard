@@ -15,7 +15,6 @@ body h2 {
 
 .sub_title {
 	text-align: center;
-
 }
 
 section {
@@ -43,7 +42,7 @@ section h2:hover{
 }
 
 #soundboard.active {
-   display: block;
+  display: block;
 }
 
 #soundboard button {
@@ -99,14 +98,16 @@ textarea {
 }
 
 button {
+	display: inline;
 	border-radius: 0;
-	width: 10em;
-	height: 35px;
+	font-size: 17px !important;
+	width: 15em;
+	height: 50px;
 	margin-top: 10px;
 	margin-left: 12em;
 	border-radius: 3px;
 	background-color: #F2F2F2;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 
 button:hover {
